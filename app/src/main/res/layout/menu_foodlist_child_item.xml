@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="199dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/foodCardView">
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@drawable/shap_menu_foodlist"
+        android:orientation="vertical"
+        android:weightSum="11"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="3dp">
+
+        <RelativeLayout
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/food_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foodfilterbackground"
+                app:riv_corner_radius_top_left="10dip"
+                app:riv_corner_radius_top_right="10dip" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shap_foodlist_top_left">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_black_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shap_foodlist_top_right">
+                <ImageView
+                    android:id="@+id/fav"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_sweet_list_border" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="4"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/menu_img"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <TextView
+                        android:id="@+id/food_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="6"
+                        android:gravity="right"
+                        android:text="Name of Food"
+                        android:textSize="19sp" />
+
+                    <RelativeLayout
+                        android:layoutDirection="ltr"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_marginLeft="2dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/shap_count">
+
+                                <Button
+                                    android:id="@+id/btnMinesCart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:text="-"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+
+
+
+                            <TextView
+                                android:id="@+id/txtCount"
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="۱"
+                                android:textSize="20sp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/shap_count">
+
+                                <Button
+                                    android:id="@+id/btnAddCount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:text="+"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:weightSum="9">
+
+                    <TextView
+                        android:id="@+id/food_price"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:text="100,000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:textColor="#C39a58"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="تحویل روز بعد"
+                        android:id="@+id/txtSendTomorrow"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3">
+
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textColor="#C39a58"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="تعداد:"
+                                android:layout_alignParentRight="true"/>
+
+                            <TextView
+                                android:textColor="#C39a58"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:id="@+id/txtFoodCount"/>
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_quick_cart"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/button_shap_menu"
+                android:text="سفارش"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@android:color/transparent"></RelativeLayout>
+
+
+</RelativeLayout>

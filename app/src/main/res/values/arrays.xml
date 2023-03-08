@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>شاخه گل</item>
+        <item>دسته گل</item>
+        <item>مصنوعی</item>
+        <item>گلدانی</item>
+        <item>درختچه</item>
+    </string-array>
+    <string-array name="titlewallet">
+        <item>کیف پول</item>
+        <item>تراکنش های من</item>
+    </string-array>
+
+    <string-array name="title">
+        <item>کیک</item>
+        <item>شیرینی</item>
+        <item>شکولات</item>
+        <item>آجیل</item>
+        <item>حلوا</item>
+        <item>تزئینات</item>
+    </string-array>
+
+
+
+
+</resources>

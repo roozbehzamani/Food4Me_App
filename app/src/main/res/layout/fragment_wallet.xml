@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:weightSum="10.4"
+    android:background="@color/white">
+
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"></RelativeLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_weight="1.9"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_weight="1.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:background="@drawable/shap_wallet_rate"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight=".2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"></RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtCredit"
+                android:layout_gravity="center"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:text="0تومان"
+                android:textColor="@color/startblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:text="اعتبار من"
+                android:textColor="@color/startblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="1.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_weight=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"></RelativeLayout>
+
+    <TextView
+        android:textColor="@color/startblue"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".5"
+        android:gravity="right"
+        android:text="مبلغ شارژ کیف پول"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight=".8"
+        android:id="@+id/edtCreditAmount"
+        android:textColorHint="@color/startblue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shap_wallet"
+        android:gravity="center"
+        android:hint="مبلغ مورد نظر خود را وارد کنید"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></RelativeLayout>
+
+
+    <LinearLayout
+
+        android:weightSum="4"
+        android:layout_weight=".8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></RelativeLayout>
+        <Button
+            android:id="@+id/btnDefaultTen"
+            android:textColor="@color/startblue"
+            android:text="۱۰هزارتومان"
+            android:background="@drawable/shap_wallet_left"
+            android:layout_weight="1.23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnDefaultTwentyFiveّ"
+            android:textColor="@color/startblue"
+            android:text="۲۵هزارتومان"
+            android:background="@drawable/shap_center_wallet"
+            android:layout_weight="1.23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"  />
+        <Button
+            android:id="@+id/btnDefaultFifty"
+            android:textColor="@color/startblue"
+            android:text="۵۰هزارتومان"
+            android:layout_weight="1.23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shap_wallet_right"/>
+
+
+
+        <RelativeLayout
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></RelativeLayout>
+
+    <Button
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_weight=".76"
+        android:id="@+id/btnSave"
+        android:textColorHint="@color/startblue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shap_wallet"
+        android:gravity="center"
+        android:hint="تایید"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp" />
+
+
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:background="@drawable/footer"
+        android:layout_weight="1.24"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:gravity="top"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:text="لیست منو"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.8">
+
+        <iammert.com.expandablelib.ExpandableLayout
+            android:id="@+id/menu_ExpandableLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            app:parentLayout="@layout/menu_foodlist_parent_item"
+            app:childLayout="@layout/menu_foodlist_child_item"/>
+    </ScrollView>
+
+</LinearLayout>

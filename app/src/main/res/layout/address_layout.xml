@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:verticalScrollbarPosition="defaultPosition"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtAddressType"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableRight="@drawable/ic_lable"
+        android:hint=" ... ،نوع آدرس مانند شرکت ، خانه "
+        android:inputType="text"
+        android:padding="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/edtHomeName"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_home"
+            android:hint="نام ساختمان در صورت وجود"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"/>
+        <EditText
+            android:id="@+id/edtFloor"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_floor"
+            android:hint="طبقه"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"/>
+        <EditText
+            android:id="@+id/edtUnit"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_door"
+            android:hint="واحد"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp"
+            android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtCompleteAddress"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableRight="@drawable/ic_loc"
+        android:hint="آدرس کامل"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp"
+        android:layout_marginTop="3dp"/>
+
+
+
+    <ru.katso.livebutton.LiveButton
+        xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnSendInfo"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_margin="6dp"
+        android:text="ذخیره"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        livebutton:backgroundColor="@color/colorAccent"
+        livebutton:cornerRadius="4dp" />
+
+
+
+
+
+</LinearLayout>

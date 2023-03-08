@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".ProfileCollectionAvtivity"
+    android:weightSum="10.6"
+    android:background="#36c39a58">
+
+    <RelativeLayout
+        android:background="@color/graylight"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:background="@color/startblue"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgProfileImage"
+                android:src="@drawable/homedrawer"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="30dip"
+                app:riv_border_width="4dip"
+                app:riv_border_color="#fff"
+                app:riv_oval="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:weightSum="9"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".95"
+                            android:background="@color/graylight">
+
+                            <EditText
+                                android:id="@+id/edtName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:cursorVisible="false"
+                                android:gravity="center"
+                                android:hint="نام"
+                                android:paddingBottom="3dp"
+                                android:paddingRight="3dp"
+                                android:paddingTop="3dp"
+                                android:singleLine="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".1"/>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".95"
+                            android:background="@color/graylight">
+
+                            <EditText
+                                android:id="@+id/edtFamily"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:hint="نام خانوادگی"
+                                android:cursorVisible="false"
+                                android:paddingBottom="3dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="3dp"
+                                android:gravity="center"
+                                android:singleLine="true"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="-35dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+
+            android:gravity="center_horizontal"
+            android:weightSum="4.2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/nav_AddressMe"
+                android:background="@color/graylight"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_add_location_black_24dp"
+                android:text="آدرس های من"/>
+
+            <Button
+                android:background="@color/graylight"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_security_black_24dp"
+                android:text="تغییر رمز"
+                android:id="@+id/nav_change_password"/>
+
+            <Button
+                android:id="@+id/btnMyCredit"
+                android:background="@color/graylight"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_iconfinder_wallet"
+                android:text="اعتبارمن"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_weight="3.5"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:weightSum="4"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75">
+
+            <ImageView
+                android:src="@drawable/ic_email"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:gravity="left"
+                    android:textDirection="ltr"
+                    android:id="@+id/edtEmail"
+                    android:textSize="17sp"
+                    android:layout_gravity="left"
+                    android:text="moazamshabnam@gmail.com"
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75">
+
+            <ImageView
+                android:src="@drawable/ic_phone_android"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/txtPhone"
+                    android:textSize="18sp"
+                    android:layout_gravity="right"
+                    android:text="0396868989"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75">
+
+            <ImageView
+                android:src="@drawable/ic_man"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/btnSelectSex"
+                    android:layout_gravity="right"
+                    android:text="جنسیت"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75">
+
+            <ImageView
+                android:src="@drawable/ic_date_range"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/startDate"
+                    android:layout_gravity="right"
+                    android:text="تاریخ تولد"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"></LinearLayout>
+    <Button
+
+        android:id="@+id/btsSaveChanges"
+        android:layout_weight=".6"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textStyle="bold"
+        android:background="#C39a58"
+        android:text="     ذخیره     "
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

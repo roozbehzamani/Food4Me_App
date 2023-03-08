@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layoutDirection="rtl"
+    app:cardElevation="4dp"
+    android:background="@android:color/transparent">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/ic_add_loc"
+                    android:gravity="right|center_vertical"
+                    android:text="ثبت آدرس"
+                    android:padding="10dp"
+                    android:textSize="24sp"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spStudentDefaultAddress"
+                    android:visibility="gone"></Spinner>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edtComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/ic_comment_brown"
+                    android:gravity="right|center_vertical"
+                    android:hint="پیام"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="24sp"
+                    android:inputType="textMultiLine"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shap_menu_foodlist">
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@android:color/transparent"
+                                    android:id="@+id/ckbReceveOnTime"
+                                    android:text="دریافت سفارش ، همین الان"
+                                    android:textSize="15sp"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shap_menu_foodlist">
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@android:color/transparent"
+                                    android:id="@+id/ckbUsedCredit"
+                                    android:text="از اعتبار خود استفاده میکنم"
+                                    android:textSize="15sp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shap_menu_foodlist">
+
+                                <RelativeLayout
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/txtNowCredit"
+                                        android:text="میزان اعتبار فعلی شما"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/txtNowTotalCredit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNowCredit"
+                                        android:layout_centerHorizontal="true"
+                                        android:text="50.000"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shap_menu_foodlist">
+
+                                <RelativeLayout
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/txtFinal"
+                                        android:text="مبلغ پرداختی نهایی"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:id="@+id/txtFinalPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtFinal"
+                                        android:text="50.000"
+                                        android:textStyle="bold"
+                                        android:layout_centerHorizontal="true"/>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/save_order_btn_shape"
+                        android:text="ثبت"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/save_order_btn_shape"
+                        android:text="لغو"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+           android:layout_weight="1.2"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+
+
+
+
+                <TextView
+                    android:background="@android:color/transparent"
+                    android:textColor="#b00020"
+                    android:id="@+id/txtAlert"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:maxLines="3"
+                    android:lines="3"
+                    android:text="@string/popup_alert"></TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

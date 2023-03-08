@@ -1,0 +1,177 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_arrow_back_black_24dp</item>
+    </style>
+
+    <style name="FlowerDetails" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppThemeAlbume" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppThemeHome" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@android:color/transparent</item>
+
+    </style>
+    <style name="AppThemeMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#f8d9a3</item>
+        <item name="colorPrimaryDark">#f8d9a3</item>
+        <item name="colorAccent">#f8d9a3</item>
+
+    </style>
+    <style name="AppThemeselecttype" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#c5970e</item>
+        <item name="colorPrimaryDark">#c5970e</item>
+        <item name="colorAccent">#c5970e</item>
+
+    </style>
+    <style name="AppThemeprofile" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/startblue</item>
+        <item name="colorPrimaryDark">@color/startblue</item>
+        <item name="colorAccent">@color/startblue</item>
+
+    </style>
+
+    <style name="AppThemeSign" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#f8d9a3</item>
+        <item name="colorPrimaryDark">#f8d9a3</item>
+        <item name="colorAccent">#f8d9a3</item>
+
+    </style>
+    <style name="AppTheme.AppBarOverlayb" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimarya</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarka</item>
+        <item name="colorAccent">@color/colorAccenta</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+
+
+
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CollapsedAppbar" parent="@android:style/TextAppearance.Material" >
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+        </style>
+
+    <style name="ExpandedAppbar" parent="@android:style/TextAppearance.Material.Title" >
+
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#9ca0a3</item>
+        <item name="colorControlActivated">#9ca0a3</item>
+    </style>
+
+<style name="RatingDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:background">@android:color/white</item>
+    <item name="android:buttonBarPositiveButtonStyle">@style/RatingDialogButtonStyle</item>
+    <item name="android:buttonBarNegativeButtonStyle">@style/RatingDialogButtonStyle</item>
+
+</style>
+
+
+
+    <style name="RatingDialogButtonStyle" parent="@style/Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/RatingDialogButtonStyle</item>
+
+    </style>
+    <style name="RatingDialogFadeAnim">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+
+    <style name="Widget.CardContentabout" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar -->
+        <item name="searchBackground">@color/theme_primary</item>
+
+        <!-- Change voice icon -->
+        <item name="searchVoiceIcon">@drawable/ic_action_voice_search_inverted</item>
+
+        <!-- Change clear text icon -->
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+
+        <!-- Change up icon -->
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+
+        <!-- Change icon for the suggestions -->
+        <item name="searchSuggestionIcon">@drawable/ic_suggestion</item>
+
+        <!-- Change background for the suggestions list view -->
+        <item name="searchSuggestionBackground">@android:color/white</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@color/theme_primary_text_inverted</item>
+
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/theme_secondary_text_inverted</item>
+
+        <!-- Hint for edit text -->
+        <item name="android:hint">@string/search_hint</item>
+    </style>
+
+
+</resources>

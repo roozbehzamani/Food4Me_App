@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snow.skittles.SkittleLayout
+    android:id="@+id/skittleLayout"
+    android:layoutDirection="rtl"
+    app:mainSkittleColor="@color/startblue"
+    app:mainSkittleIcon="@drawable/ic_apps_black_24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shabnammoazam.foooooooood.Home"
+    tools:showIn="@layout/app_bar_home"
+    android:layout_marginTop="-83dp"
+    android:layout_marginBottom="40dp"
+    android:fitsSystemWindows="false">
+
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"/>
+
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/imageButtonSelected">
+
+            <ImageButton
+                android:background="#C39a58"
+                android:id="@+id/imgFastFood"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_local_pizza_black_24dp"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:background="#C39a58"
+                android:id="@+id/imgResturant"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_restaurant_black_24dp"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:background="#C39a58"
+                android:id="@+id/imgCaffiShop"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_local_cafe_black_24dp"
+                android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_resturant"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+</snow.skittles.SkittleLayout>

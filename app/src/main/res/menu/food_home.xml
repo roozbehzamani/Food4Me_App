@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/FoodHome"
+        android:title="برگشت به صفحه اصلی غذا"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/FoodMenu"
+        android:title="برگشت به منو غذا"
+        app:showAsAction="never"/>
+
+</menu>

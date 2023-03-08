@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C39a58</color>
+    <color name="theme_primary">#2196F3</color>
+    <color name="theme_primary_text_inverted">#ffffff</color>
+    <color name="theme_secondary_text_inverted">#8affffff</color>
+    <color name="colorPrimaryDark">#C39a58</color>
+    <color name="colorAccent">#C39a58</color>
+    <color name="btnSignUp">#E43F3F</color>
+    <color name="btnSignActivity">#C39a58</color>
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+    <color name="pink">#CFD8DC</color>
+    <color name="indigo">#CFD8DC</color>
+    <color name="bgRawBackground">#FA315B</color>
+    <color name="imageButtonColor">#b00020</color>
+    <color name="imageButtonSelected">#72d1aa6b</color>
+    <color name="imagewalletSelected">#2ed1aa6b</color>
+
+    <color name="whitebtn">#ffffff</color>
+
+
+    <color name="reserveTransparent">@android:color/transparent</color>
+
+
+
+    <color name="SnackbarColor">#99000000</color>
+
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#C39a58</color>
+    <color name="endblue">#C39a58</color>
+
+    <color name="AddCredit">#c6f68d</color>
+    <color name="MinesCredit">#EF9A9A</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#66AAAAAA</color>
+    <color name="iron">#DBCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="colorPrimarya">#00FA315B</color>
+    <color name="colorPrimaryDarka">#00CC1D1D</color>
+    <color name="colorAccenta">#00E53935</color>
+
+
+
+
+
+
+</resources>

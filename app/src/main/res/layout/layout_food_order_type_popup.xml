@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="لطفا نوع دریافت سفارش خود را انتخاب نمایید"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/typeHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="10dp"
+                        android:layout_margin="10dp"
+                        android:layoutDirection="rtl"
+                        app:cardCornerRadius="12dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="تحویل درب منزل"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/typeRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="10dp"
+                        android:layout_margin="10dp"
+                        android:layoutDirection="rtl"
+                        app:cardCornerRadius="12dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="دریافت حضوری"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/swipe_layout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerComment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.4"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_marginRight="8dp"
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+            <TextView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/txt1"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:background="@color/MinesCredit"
+                android:text=""/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txt2"
+                android:textSize="18sp"
+                android:textColor="@color/startblue"
+                android:text="استفاده از اعتبار"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></RelativeLayout>
+            <RelativeLayout
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/txt3"
+                android:background="@color/AddCredit"
+                android:text=" "/>
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:id="@+id/txt4"
+                android:textColor="@color/startblue"
+                android:text="افزودن اعتبار"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

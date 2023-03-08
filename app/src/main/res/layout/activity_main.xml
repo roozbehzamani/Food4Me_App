@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    android:background="#f8d9a3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:weightSum="5">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight=".5"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageDrawer"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mainactivity"
+                    app:riv_border_color="#f8d9a3"
+                    app:riv_oval="true" />
+
+                <TextView
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageDrawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/txtSlogan"
+                    android:text="@string/Slogan"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ru.katso.livebutton.LiveButton
+                        android:id="@+id/btnSignIn"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="ورود"
+                        android:textColor="@android:color/white"
+                        livebutton:backgroundColor="#EF6C00"
+                        livebutton:cornerRadius="4dp"   />
+            <ru.katso.livebutton.LiveButton
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:text="عضویت"
+                android:textColor="@android:color/white"
+                livebutton:backgroundColor="@color/btnSignUp"
+                livebutton:cornerRadius="4dp"  />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    
+
+
+</LinearLayout>

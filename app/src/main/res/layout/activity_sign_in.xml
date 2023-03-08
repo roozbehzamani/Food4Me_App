@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8d9a3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:weightSum="8.6"
+        tools:context=".SignIn">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            android:background="@drawable/editfooooood">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:background="#f8d9a3"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/backgroun"
+            android:orientation="vertical"
+            android:weightSum="5.1">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".8"
+                android:background="@android:color/white">
+
+                <Spinner
+                    android:id="@+id/spUserAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/base" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_weight=".8"
+                android:background="@android:color/white">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textDirection="rtl"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".8"
+                android:background="@android:color/white">
+
+                <EditText
+
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:gravity="right"
+                    android:hint="رمز عبور"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textDirection="rtl"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight=".2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.4"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:background="@android:color/transparent">
+
+                    <CheckBox
+                        android:id="@+id/ckbRemember"
+                        style="@style/Material.Drawable.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layoutDirection="rtl"
+                        android:text="مرا به خاطر بسپار..."
+                        android:textColor="#9ca0a3"
+                        android:textSize="20sp"
+                        android:theme="@style/MyCheckBox" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".1"
+                    android:background="@android:color/transparent" />
+
+                <Button
+
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".9"
+                    android:background="#E12929"
+                    android:text="ورود"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/forget_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center_horizontal"
+                    android:text="رمز خود را فراموش کرده ام"
+                    android:textColor="#c19ca0a3"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnSignIn" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="طرف قرارداد با دانشگاه صنعتی ارومیه"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/uut"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
